@@ -1,0 +1,39 @@
+#include <iostream>
+#include <srting>
+using namespace std;
+
+class student {
+private:
+   string name;
+   int age;
+   string course;
+
+public:
+    //constructor
+    student(string name, int age, string course) {
+       this->name = name;
+       this->age = age;
+       this->course = course;
+   
+    }
+
+   //Display student details
+   void displayDetails() {
+      cout << "Student Details:" << endl;
+      cout << "Name: " <<name << endl;
+      cout << "Age: " << age << endl;
+      cout << "Course; " << course  << endl;
+   }
+};
+
+int main() {
+   //creting object 
+   student student1("Anjali", 20, "computer science");
+
+   //Display details
+  student1.displayDetails();
+
+  return 0;
+}
+
+
